@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
 import { RodapePComponent } from './rodape-p/rodape-p.component';
 import { NoticiaComponent } from './noticia/noticia.component';
+import { AlertaComponent } from './alerta/alerta.component';
 
 @NgModule({
   declarations: [
     TopoComponent,
     AppComponent,
     RodapePComponent,
-    NoticiaComponent
+    NoticiaComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule
