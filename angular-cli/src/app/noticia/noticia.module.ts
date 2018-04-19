@@ -23,7 +23,7 @@ exports: [
   NoticiaComponent,
 ]
 }
-})
+)
 export class NoticiaModule { }
 
 
