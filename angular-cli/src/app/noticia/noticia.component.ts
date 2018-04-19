@@ -15,6 +15,10 @@ export class NoticiaComponent implements OnInit {
 
   mostrarNoticia: boolean = true;
 
+  titulo: string = 'Olá, Accenturianos!';
+  texto: string = 'Neste mês, jovens mulheres destemidas encaram um novo desafio no mundo de TI. Bora #TimeAngular!';
+  caminho_imagem: string ='../../assets/img/accenture_logo.png';
+
   constructor() { }
 
   ngOnInit() {

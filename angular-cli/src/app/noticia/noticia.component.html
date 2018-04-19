@@ -2,10 +2,10 @@
   <div class="row" *ngIf="mostrarNoticia; else noticiaUnica">
     <div class="col-md-6" *ngFor="let noticia of noticia">
       <div class="jumbotron">
-          <h1 class="display-4">Olá, Accenturianos!</h1>
-          <p class="lead">Novas colaboradoras?</p>
+          <h1 class="display-4">{{ titulo }}</h1>
+          <img class="tamanho" [src]="caminho_imagem">
           <hr class="my-4">
-          <p>Neste mês, jovens mulheres destemidas encaram um novo desafio no mundo de TI. Bora <b>#TimeAngular!</b></p>
+          <p>{{ texto }}</p>
           <p class="lead">
           <button (click)="esconderNoticia()" type="button" class="btn btn-sm btn-danger">Confira!</button>
           </p>
@@ -17,14 +17,17 @@
   <div class="row">
     <div class="col-md-12">
         <div class="jumbotron">
-            <h1 class="display-4">Olá, Accenturianos!</h1>
-            <p class="lead">Novas colaboradoras?</p>
+            <h1 class="display-4">{{ titulo }}</h1>
+            <img class="tamanho" [src]="caminho_imagem">
             <hr class="my-4">
-            <p>Neste mês, jovens mulheres destemidas encaram um novo desafio no mundo de TI. Bora <b>#TimeAngular!</b></p>
+            <p>{{ texto }}</p>
             <p class="lead">
             <button (click)="mostrarNoticias()" type="button" class="btn btn-sm btn-danger">Voltar</button>
             </p>
           </div>
     </div>
-</div>
+ </div>
+ <div class="row">
+   <app-primeiroexemplo></app-primeiroexemplo>
+ </div>
 </ng-template> 
